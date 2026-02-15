@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Didier Biography | MyDid Travel Blog</title>
+  <style>
+    /* Main theme */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #222; /* Dark theme default */
+      color: #f0f0f0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+      border: 3px solid #f1c40f;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+
+    .bio-section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 30px 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .bio-section p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    /* Additional pictures */
+    .extra-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .extra-images img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #f1c40f;
+    }
+
+    /* Contact & Home buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .buttons a {
+      padding: 12px 20px;
+      background-color: #f1c40f;
+      color: #222;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #e0b90f;
+    }
+
+    /* Light theme styles */
+    body.light-theme {
+      background-color: #f0f2f5;
+      color: #222;
+    }
+
+    body.light-theme .bio-section {
+      background-color: #fff;
+      color: #222;
+    }
+
+    body.light-theme .buttons a {
+      color: #222;
+    }
+
+    body.light-theme .theme-toggle {
+      background-color: #ddd;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- Contact link -->
+  <div class="buttons" style="justify-content:flex-end;margin:20px;">
+    <a href="contactform.html">Contact Me</a>
+  </div>
+
+  <!-- Header with profile picture and name -->
+  <header>
+    <img src="images/profile-placeholder.jpg" alt="Didier Profile Picture">
+    <h1>Ddier</h1>
+    <h1>Didier ISHIMWE BSc. (OTR/L)</h1>
+
+  </header>
+
+  <!-- Biography section -->
+  <div class="bio-section">
+    <p>I am Didier ISHIMWE, a registered and licensed occupational therapist based in Kigali, Rwanda, holding a Bachelor of Science with Honors in Occupational Therapy from the University of Rwanda. I providing home interventions and home-based therapy for neurological and pediatric case, combining hands-on clinical expertise with a strong commitment to improving patient outcomes. I have a particular interest in health data analytics, health informatics, and research, and I aim to use data-driven insights to enhance rehabilitation strategies and support informed decision-making in healthcare.</p>
+
+    <p>I am a computer science student at the University of the People, actively involved in software development and technology projects. I am proficient in programming languages such as Java, Python, and JavaScript, which allows me to explore innovative solutions at the intersection of healthcare and technology. I am passionate about integrating technology into healthcare to improve patient care and contribute to the broader health system in Rwanda.</p>
+    
+    <h2>Contact us for Home therapy </h2>
+
+    <form id="contactForm" method="POST" action="https://formspree.io/f/xjgewpdo">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="text" name="phone" required>
+
+  <label for="message">Message:</label>
+  <textarea name="message" rows="4" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+<style>
+  form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #444; /* dark theme background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+
+  form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #f1c40f;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: #e0b90f;
+  }
+</style>
+
+    <!-- Additional pictures -->
+    <div class="extra-images">
+      <img src="images/extra1-placeholder.jpg" alt="Extra picture 1">
+      <img src="images/extra2-placeholder.jpg" alt="Extra picture 2">
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <div class="buttons">
+    <a href="index.html">Home</a>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-theme");
+    }
+  </script>
+</body>
+</html>
